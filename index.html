@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Login
+                </h1>
+
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <label class="label">Username</label>
+                        <div class="control">
+                            <input class="input" type="text" id="username" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Password</label>
+                            <div class="control">
+                                <input class="input" type="text" id="password" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+
+                        </div>
+                        <div class="column">
+                            <div class="field">
+                                <label class="label">AutoBot</label>
+                                <div class="control">
+                                    <input class="input" type="text" id="autobot" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column">
+
+                            </div>
+                            <div class="column">
+                                <a href="forgetpss.html">Forget Password?</a>
+                            </div>
+                        </div>
+                        <div class="column">
+
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column">
+
+                            </div>
+                            <div class="column">
+                                <a class="button is-fullwidth button is-success" id="loginButton" onclick="checkID()">Login</a>
+
+                            </div>
+                            <div class="column">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        var i = Math.floor(Math.random() * 10);
+                        var username2 = document.getElementById("username");
+                        var password2 = document.getElementById("password");
+                        function checkID() {
+                            if (username2.value == "admin" && password2.value == "1234") {
+                                window.open("success.html");
+                            } else {
+
+                            }
+
+
+
+                        }
+                    </script>
+
+
+    </section>
+</body>
+
+</html>
